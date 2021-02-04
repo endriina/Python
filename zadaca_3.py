@@ -64,8 +64,8 @@ branik_renato = float(input("Cijena popravka branika je: "))
 popust_renato = float(input("Popust iznosi (%): "))
 ukupna_cijena_renato= remen_renato + branik_renato
 cijena_s_popustom_renato = ukupna_cijena_renato - ukupna_cijena_renato * popust_renato / 100
-#mehanicar_renato = (str("Renato") + cijena_s_popustom_renato)
-#print(mehanicar_renato)
+mehanicar_renato = (str("Renato"), cijena_s_popustom_renato)
+print(mehanicar_renato)
 print(cijena_s_popustom_renato)
 
 remen_marin = float(input("Cijena popravka remena je: "))
@@ -73,8 +73,8 @@ branik_marin = float(input("Cijena popravka branika je: "))
 popust_marin = float(input("Popust iznosi (%): "))
 ukupna_cijena_marin= remen_marin + branik_marin
 cijena_s_popustom_marin = ukupna_cijena_marin - ukupna_cijena_marin * popust_marin / 100
-#mehanicar_marin = (str("Marin") + cijena_s_popustom_marin)
-#print(mehanicar_marin)
+mehanicar_marin = (str("Marin"), cijena_s_popustom_marin)
+print(mehanicar_marin)
 print(cijena_s_popustom_marin)
 
 remen_luka = float(input("Cijena popravka remena je: "))
@@ -82,12 +82,10 @@ branik_luka = float(input("Cijena popravka branika je: "))
 popust_luka = float(input("Popust iznosi (%): "))
 ukupna_cijena_luka= remen_luka + branik_luka
 cijena_s_popustom_luka = ukupna_cijena_luka - ukupna_cijena_luka * popust_luka / 100
-#mehanicar_luka = (str("Luka") + cijena_s_popustom_luka)
-#print(mehanicar_luka)
+mehanicar_luka = (str("Luka"), cijena_s_popustom_luka)
+print(mehanicar_luka)
 print(cijena_s_popustom_luka)
 
-#ponude = [mehanicar_renato, mehanicar_marin, mehanicar_luka]
-#print("Najpovoljnija ponuda je  : ", min(ponude))
 
-ponude_mehanicara = [cijena_s_popustom_renato, cijena_s_popustom_marin, cijena_s_popustom_luka]
-print("Najpovoljnija ponuda je  : ", min(ponude_mehanicara))
+ponude_mehanicara = [mehanicar_luka,mehanicar_marin,mehanicar_renato]
+print("Najpovoljnija ponuda je kod : ", min(ponude_mehanicara))
