@@ -64,28 +64,28 @@ branik_renato = float(input("Cijena popravka branika je: "))
 popust_renato = float(input("Popust iznosi (%): "))
 ukupna_cijena_renato= remen_renato + branik_renato
 cijena_s_popustom_renato = ukupna_cijena_renato - ukupna_cijena_renato * popust_renato / 100
-mehanicar_renato = (str("Renato"), cijena_s_popustom_renato)
-print(mehanicar_renato)
-print(cijena_s_popustom_renato)
+print("Renato:", cijena_s_popustom_renato)
 
-remen_marin = float(input("Cijena popravka remena je: "))
-branik_marin = float(input("Cijena popravka branika je: "))
-popust_marin = float(input("Popust iznosi (%): "))
-ukupna_cijena_marin= remen_marin + branik_marin
-cijena_s_popustom_marin = ukupna_cijena_marin - ukupna_cijena_marin * popust_marin / 100
-mehanicar_marin = (str("Marin"), cijena_s_popustom_marin)
-print(mehanicar_marin)
-print(cijena_s_popustom_marin)
+remen_marina = float(input("Cijena popravka remena je: "))
+branik_marina = float(input("Cijena popravka branika je: "))
+popust_marina = float(input("Popust iznosi (%): "))
+ukupna_cijena_marina= remen_marina + branik_marina
+cijena_s_popustom_marina = ukupna_cijena_marina - ukupna_cijena_marina * popust_marina / 100
+print("Marina:", cijena_s_popustom_marina)
 
 remen_luka = float(input("Cijena popravka remena je: "))
 branik_luka = float(input("Cijena popravka branika je: "))
 popust_luka = float(input("Popust iznosi (%): "))
 ukupna_cijena_luka= remen_luka + branik_luka
 cijena_s_popustom_luka = ukupna_cijena_luka - ukupna_cijena_luka * popust_luka / 100
-mehanicar_luka = (str("Luka"), cijena_s_popustom_luka)
-print(mehanicar_luka)
-print(cijena_s_popustom_luka)
+print("Luka:", cijena_s_popustom_luka)
 
+ponude_mehanicara = [cijena_s_popustom_renato, cijena_s_popustom_marina, cijena_s_popustom_luka]
+min_vrijednost = min(ponude_mehanicara)
 
-ponude_mehanicara = [mehanicar_luka,mehanicar_marin,mehanicar_renato]
-print("Najpovoljnija ponuda je kod : ", min(ponude_mehanicara))
+if min_vrijednost == cijena_s_popustom_luka:
+    print("Najpovoljnija ponuda je kod Lukice: ", min(ponude_mehanicara), "kn")
+elif min_vrijednost == cijena_s_popustom_marina:
+    print("Najpovoljnija ponuda je kod Marine: ", min(ponude_mehanicara), "kn")
+else:
+    print("Najpovoljnija ponuda je kod Renata: ", min(ponude_mehanicara), "kn")
