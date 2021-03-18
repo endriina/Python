@@ -19,8 +19,11 @@ print(prvi_tester.ime, prvi_tester.prezime)
 prvi_projekt = Projekt(input("Unesi ime projekta: "), input("Unesi ime testera: "))
 print("Project name:" + prvi_projekt.ime_projekta, "Main tester: " + prvi_projekt.tester)
 
-f= open("projekti.txt","w+")
+filename = "projekti.txt"
 
+file = open("projekti.txt", "w")
+s = str(prvi_projekt)
+file.write(s)
 
     #preskoci liste zasad
     # #lista = []
