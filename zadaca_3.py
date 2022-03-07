@@ -1,5 +1,6 @@
 # Zadatak1
 poruka = input("Unesite poruku: ")
+# TODO: Zadatak ne radi za poruku koja ima izmedu 20 i 40 znakova
 if poruka <= "joj":
     print("laze")
 elif poruka <= "hm":
@@ -34,6 +35,8 @@ print(random.choice(jobs) + " is " + random.choice(adverbs) + " " +
 
 # Zadatak4
 
+# TODO: Komentirani kod je uvijek dobro maknuti. Naravno, ne i komentare opcenito :)
+# TODO: String "ino" se u rjesenju pojavljuje 2 puta, sto ne bi trebao biti slucaj
 
 #pozvani = ["Otto", "Otto", "Neven", "Mario", "Lana", "Ana", "Tihana", "Ino", "Nikolina"]
 #pozvani.sort()
@@ -58,6 +61,9 @@ print(pozvani)
 
 
 # Zadatak5
+
+# TODO: Postoji nekoliko slucajeva koji nisu pokriveni, npr. ista cijena za svakog mehanicara, negativni brojevi,
+#  popust veci od 100% itd.
 
 remen_renato = float(input("Cijena popravka remena je: "))
 branik_renato = float(input("Cijena popravka branika je: "))

@@ -13,6 +13,7 @@ x = input()
 
 if x < peroIma:
     print("Ajme, mogao sam popiti još jedan gemišt.")
+# TODO: Nema potrebe za dva if-a, ako provjeravas range (moze se napisati u jednom if-u)
 elif x >= peroIma:
     print("Nije tak ni strašno.")
 elif x <= peroNema:
